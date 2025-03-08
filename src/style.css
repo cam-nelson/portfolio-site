@@ -1,0 +1,30 @@
+@import "https://unpkg.com/open-props";
+
+body {
+display:grid ;
+grid-template-columns: repeat(auto-fit,minmax(150px, 1fr)) ;
+gap: 5px ;
+width: 70% ;
+margin: auto ;
+background: var(--blue-5)
+}
+
+
+.container{
+  border:1px solid  lightgray ;
+  border-radius: 15px ;
+  background: darkgray ;
+  overflow: hidden ;
+}
+.container img {
+  width: 100% ;
+  max-height: 150px ;
+  object-fit: cover ;
+}
+.container h1, .container p {
+  margin: 0 ;
+
+}
+.row {
+  padding: 1rem 2rem ;
+}
