@@ -21,28 +21,19 @@ margin: auto ;
 body{
   display:flex ;
   flex-direction: column ;
-  background: var(--green-2)
-}
-
-body {
-  /* stack grain with a gradient */
-  background-image: linear-gradient(15deg, var(--violet-8), var(--orange-9)), var(--noise-5);
-  /* force colors and noise to collide */
-  filter: var(--noise-filter-3);
-  /* fit noise image to element */
-  background-size: cover;
-  background-repeat: no-repeat ;
+  background: var(--cyan-8)
 }
 
 nav {
   display:flex ;
   align-items: center ;
   justify-content: space-around ;
-  border:1px solid  lightgray ;
-  background: white ;
+  border:2px solid  var(--gray-6);
+  border-radius: 15px ;
+  background: var(--gray-2) ;
   padding-inline: 20px ;
   margin-bottom: 20px ;
-  box-shadow: 0px 2px 5px 0px lightgray ;
+  box-shadow: 0px 2px 5px 0px var(--cyan-11) ;
 }
 
 nav p {
@@ -54,21 +45,34 @@ nav p {
   gap: var(--size-3) ;
 }
 
+.nav-links a{
+  text-decoration: none ;
+  color: black ;
+}
+
+.nav-links a.current{
+  color: var(--cyan-8) ;
+}
+
+.nav-links a:hover{
+  color: var(--red-7) ;
+}
+
 .vertical-line{
   width: 2px ;
   height: 20px ;
-  background: red ;
+  background: var(--red-7) ;
 }
 
 .container{
-  border:1px solid  lightgray ;
+  border:2px solid var(--gray-6) ;
   border-radius: 15px ;
-  background: white ;
+  background: var(--gray-2) ;
   overflow: hidden ;
 }
 .container img {
   width: 100% ;
-  max-height: 150px ;
+  height: 150px ;
   object-fit: cover ;
 }
 .container h1, .container p {
