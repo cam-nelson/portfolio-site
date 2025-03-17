@@ -10,20 +10,13 @@ p {
   font-family: "Arvo", serif;
 }
 
-.testimonial-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 5px;
-  width: 70%;
-  margin: auto;
-
-}
-
 body {
   display: flex;
   flex-direction: column;
   background: var(--cyan-8)
 }
+
+/* nav bar */
 
 nav {
   display: flex;
@@ -101,6 +94,8 @@ nav p {
   padding: 1rem 2rem;
 }
 
+/* portfolio page */
+
 .portfolio-card {
   background: var(--gray-2);
   display: flex;
@@ -129,6 +124,28 @@ nav p {
   flex-direction: column;
   gap: var(--size-4);
 }
+
+.year-marker {
+  background: var(--red-7);
+  border-radius: var(--radius-3);
+  margin: auto;
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* testimonial page */
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 5px;
+  width: 70%;
+  margin: auto;
+
+}
+
+/* contact page */
 
 .contact-form {
   display: flex;
