@@ -1,33 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>contact</title>
-    <link rel="stylesheet" href="src/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>contact</title>
+  <link rel="stylesheet" href="src/style.css">
 </head>
+
 <body>
 
-    <nav>
-        <p>
-            Cameron Nelson
-         </p>
-         <div class="nav-links">
-            <a href="/index.html">home</a>
-          <div class="vertical-line">
-            </div>
-          <a href="/portfolio.html">portfolio</a>
-          <div class="vertical-line">
-            </div>
-          <a href="/testimonials.html">testimonials</a>
-          <div class="vertical-line">
-           </div>
-          <a class="current" href="/contact.html">contact</a>
-         </div>
-      
-    </nav>
+  <nav>
+    <p>
+      Cameron Nelson
+    </p>
+    <div class="nav-links">
+      <a href="/index.html">home</a>
+      <div class="vertical-line">
+      </div>
+      <a href="/portfolio.html">portfolio</a>
+      <div class="vertical-line">
+      </div>
+      <a href="/testimonials.html">testimonials</a>
+      <div class="vertical-line">
+      </div>
+      <a class="current" href="/contact.html">contact</a>
+    </div>
 
-    <h1>coming soon</h1>
+  </nav>
 
+  <h1>coming soon</h1>
+
+  <form class="contact-form" action="mailto:cameronbnelson00@gmail.com" method="post" enctype="text/plain">
+    <label>name <input name="name" /></label>
+    <label>email <input name="email" /></label>
+    <label>message <input name="comment" /></label>
+    <div class="button-row">
+      <input type="submit" value="Send">
+      <input type="reset" value="Reset">
+    </div>
+  </form>
 </body>
+
 </html>
